@@ -1,3 +1,5 @@
+package Arrays;
+
 
 public class _1013_Partiotion_Array_Into_Three_Parts_With_Equal_Sum {
 
