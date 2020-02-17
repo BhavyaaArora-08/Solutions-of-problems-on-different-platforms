@@ -1,0 +1,40 @@
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        HashMap<Integer,Integer> map=new HashMap<>();
+        int ans=0;
+        
+        ArrayList<Integer> l=new ArrayList<>();
+        
+        for(int i=0;i<nums.length;i++)
+        {
+            int of=map.getOrDefault(nums[i],0);
+            map.put(nums[i],of+1);
+        }
+        
+        for(int key:map.keySet())
+        {
+            int x=map.get(key);
+            if(x<=2)
+            {
+                for(int i=0;i<x;i++)
+                    l.add(key);
+                ans+=x;
+            }
+            else
+            {
+                for(int i=0;i<2;i++)
+                    l.add(key);
+                ans+=2;
+            }
+        }
+                   
+        Collections.sort(l);
+        
+        for (int i=0; i < l.size(); i++)
+        {
+            nums[i] = l.get(i);
+        }
+                
+        return ans;
+    }
+}

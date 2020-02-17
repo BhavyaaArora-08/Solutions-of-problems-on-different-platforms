@@ -6,6 +6,7 @@ public class The_Power_Sum {
 		System.out.println(find(1, 13, 0,2));
 	}
 	
+	
 	public static int find(int idx,int x,int sum,int k)
 	{
 		
