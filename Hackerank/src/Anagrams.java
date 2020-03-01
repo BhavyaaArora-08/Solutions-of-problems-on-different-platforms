@@ -4,8 +4,10 @@ public class Anagrams {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(find(
-				"aujteqimwfkjoqodgqaxbrkrwykpmuimqtgulojjwtukjiqrasqejbvfbixnchzsahpnyayutsgecwvcqngzoehrmeeqlgknnb"));
+//		System.out.println(find(
+//				"aujteqimwfkjoqodgqaxbrkrwykpmuimqtgulojjwtukjiqrasqejbvfbixnchzsahpnyayutsgecwvcqngzoehrmeeqlgknnb"));
+		
+		System.out.println(find("cdeabc"));
 	}
 
 	public static int find(String str) {
@@ -18,7 +20,7 @@ public class Anagrams {
 		HashMap<Character, Integer> map1 = new HashMap<>();
 		HashMap<Character, Integer> map2 = new HashMap<>();
 		
-		System.out.println(one + " " + two);
+//		System.out.println(one + " " + two);
 		
 		int c1 = 0;
 
@@ -44,7 +46,7 @@ public class Anagrams {
 
 		}
 
-		return c1;
+		return 2*c1;
 	}
 
 }
