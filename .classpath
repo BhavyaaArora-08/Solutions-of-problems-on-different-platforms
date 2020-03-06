@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Hackerank/src"/>
+	<classpathentry excluding="Arrays/" kind="src" path="LeetCode/src"/>
+	<classpathentry kind="src" path="LeetCode/src/Arrays"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
