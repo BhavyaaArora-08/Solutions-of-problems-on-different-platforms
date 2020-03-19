@@ -4,7 +4,7 @@ public class _665_Non_decreasing_Array_ {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int[] arr = {4,2,1};
+		int[] arr = {1,2,5,3,3};
 		one(arr);
 	}
 	
@@ -14,7 +14,7 @@ public class _665_Non_decreasing_Array_ {
 		
 		int c=0,i=0;
 		
-		while(i<arr.length-1 )
+		while(i<arr.length-1 && (c<=1 || arr[i]<arr[i+1]))
 		{
 			if(arr[i]>arr[i+1])
 			{
